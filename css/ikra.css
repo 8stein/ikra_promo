@@ -1,15 +1,15 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 @font-face {
-font-family: 'Museo Sans Cyrl 900';
-font-style: normal;
-font-weight: normal;
-src: local('Museo Sans Cyrl 900'), url('MuseoSansCyrl_3.woff') format('woff');
+	font-family: 'Museo Sans Cyrl 900';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Museo Sans Cyrl 900'), url('MuseoSansCyrl_3.woff') format('woff');
 }
 @font-face {
-font-family: 'Museo Sans Cyrl 700';
-font-style: normal;
-font-weight: normal;
-src: local('Museo Sans Cyrl 700'), url('MuseoSansCyrl_2.woff') format('woff');
+	font-family: 'Museo Sans Cyrl 700';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Museo Sans Cyrl 700'), url('MuseoSansCyrl_2.woff') format('woff');
 }
 body {
 	text-transform:uppercase;
@@ -45,32 +45,62 @@ body {
 .fat {
 	font-family: 'Museo Sans Cyrl 900';
 }
+.big {
+	font-size: 60px;
+	letter-spacing: 7px;
+	margin-top: 40px;
+}
+.grey {
+	color:#BEBEBE;
+	font-size:12px;
+}
 .text {
 	text-align:left;
 }
+.center {
+	text-align: center;
+}
 .share-fb, .share-vk {
-display: inline-block;
-width: 160px;
-height: 40px;
-border: 2px solid #EF4949;
-text-transform: uppercase;
-line-height: 40px;
-margin-bottom: 5px;
+	display: inline-block;
+	border: 2px solid #EF4949;
+	text-transform: uppercase;
+	line-height: 40px;
+	margin-bottom: 5px;
+	width:313px;
+	height:80px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Museo Sans Cyrl 900';
+	letter-spacing: 7px;
+	padding: 17px;
+}
+.share-fb {
+	margin-right:40px;
 }
 .share-fb:hover, .share-vk:hover {
-background-color: #EF4949;
-color: #ffffff;
+	background-color: #EF4949;
+	color: #ffffff;
+	width:313px;
+	height:80px;
 }
 .shareit {
 	text-align:center;
+	margin: 50px 0;
+}
+.shareit a {
+	color:#EF4949;
 }
 .surprise {
 	background-color: #2B9EED;
 	color:#FFFFFF;
 	text-align: center;
+	margin-top:40px;
 }
 .surprise hr {
 	border-color:#2B9EED;
+}
+.red {
+	color: #EF4949;
 }
 input[type=radio] {
 	
