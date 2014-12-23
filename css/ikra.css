@@ -40,6 +40,7 @@ body {
 	clear:both;
 	text-align: center;
 	color:#000000;
+	text-transform: none;
 }
 .fat {
 	font-family: 'Museo Sans Cyrl 900';
@@ -70,4 +71,13 @@ color: #ffffff;
 }
 .surprise hr {
 	border-color:#2B9EED;
+}
+input[type=radio] {
+	
+}
+label:cheked{
+	text-decoration: underline;
+}
+label.radio-inline:active, label.radio-inline:enabled {
+	text-decoration: underline;
 }
