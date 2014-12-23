@@ -116,7 +116,7 @@ body {
 	margin: 0 !important;
 }
 .radio-inline input:checked + span {
-    border-bottom: 2px dashed;
+    border-bottom: 2px solid;
 }
 .radio-inline-wrapper > * {
 	display: inline-block;
