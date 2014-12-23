@@ -17,7 +17,15 @@ $(function()
 			banners: { required: true },
 			happy: { required: true },
 			next: { required: true }
-		}
+		},
+
+		invalidHandler: function(form, validator)
+		{
+			$('#error').toggle(validator.numberOfInvalids());
+		},
+
+		showErrors: function(){}
+
 	});
 
 });
