@@ -1,0 +1,73 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+@font-face {
+font-family: 'Museo Sans Cyrl 900';
+font-style: normal;
+font-weight: normal;
+src: local('Museo Sans Cyrl 900'), url('MuseoSansCyrl_3.woff') format('woff');
+}
+@font-face {
+font-family: 'Museo Sans Cyrl 700';
+font-style: normal;
+font-weight: normal;
+src: local('Museo Sans Cyrl 700'), url('MuseoSansCyrl_2.woff') format('woff');
+}
+body {
+	text-transform:uppercase;
+}
+.ikraikra #logo {margin: 50px 0;}
+.hello {
+	border: 2px solid #EF4949;
+	text-align: center;
+	text-align: -webkit-center;
+	max-width: 1040px;
+	margin: 0 auto;
+	padding: 0 80px;
+}
+.hello .form-heading {
+	margin-top:-40px;
+	background-color: #FFFFFF;
+	width:340px;
+	height: 80px;
+	padding: 24px;
+}
+.hello .form-heading h2 {
+	margin:0;
+}
+.form-horizontal {
+	margin-bottom:0;
+}
+.intro {
+	clear:both;
+	text-align: center;
+	color:#000000;
+}
+.fat {
+	font-family: 'Museo Sans Cyrl 900';
+}
+.text {
+	text-align:left;
+}
+.share-fb, .share-vk {
+display: inline-block;
+width: 160px;
+height: 40px;
+border: 2px solid #EF4949;
+text-transform: uppercase;
+line-height: 40px;
+margin-bottom: 5px;
+}
+.share-fb:hover, .share-vk:hover {
+background-color: #EF4949;
+color: #ffffff;
+}
+.shareit {
+	text-align:center;
+}
+.surprise {
+	background-color: #2B9EED;
+	color:#FFFFFF;
+	text-align: center;
+}
+.surprise hr {
+	border-color:#2B9EED;
+}
