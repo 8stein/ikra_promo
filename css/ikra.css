@@ -14,7 +14,9 @@
 body {
 	text-transform:uppercase;
 }
-.ikraikra #logo {margin: 50px 0;}
+.ikraikra #logo {
+	margin: 50px 0;
+}
 .hello {
 	border: 2px solid #EF4949;
 	text-align: center;
@@ -102,10 +104,9 @@ body {
 .red {
 	color: #EF4949;
 }
-input[type=radio] {
-	
-}
-label:cheked{
+
+.radio-inline input[type=radio]:checked+label{
+    border: black solid 2px;
 	text-decoration: underline;
 }
 label.radio-inline:active, label.radio-inline:enabled {
