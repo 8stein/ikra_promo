@@ -104,11 +104,21 @@ body {
 .red {
 	color: #EF4949;
 }
-
-.radio-inline input[type=radio]:checked+label{
-    border: black solid 2px;
-	text-decoration: underline;
+.radio-inline {
+	position: relative;
+	padding: 0 !important;
+	margin: 0 !important;
 }
-label.radio-inline:active, label.radio-inline:enabled {
-	text-decoration: underline;
+.radio-inline input {
+	position: absolute;
+	opacity: 0;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.radio-inline input:checked + span {
+    border-bottom: 2px dashed;
+}
+.radio-inline-wrapper > * {
+	display: inline-block;
+	vertical-align: middle;
 }
