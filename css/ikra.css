@@ -122,4 +122,19 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 }
+.radio-left {
+	font-size: 22px;
+	text-align:left;
+	margin-left: 0px !important;
+}
+
 #error { display: none;}
+.badcat { 
+	font-size: 18px;
+	margin: 20px 0;	
+	clear:both;
+	text-align: center;
+	color:#000000;
+	text-transform: none;
+}
+.badcat img {margin: 5px;}
