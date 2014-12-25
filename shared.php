@@ -43,8 +43,6 @@ else
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-<script src="http://vkontakte.ru/js/api/xd_connection.js?2" type="text/javascript"></script>
-<script src="http://vkontakte.ru/js/api/openapi.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="ikraikra">
@@ -62,40 +60,71 @@ else
 		</div>
 	</div>
     <div class="container">
-      <div class="row"><div class="intro">А теперь расскажи о том, как ты профукал свой 2014 своим друзьям, ведь им так интересно!</div>
-      <div class="shareit">
-      <a id="share-fb" style="cursor:pointer;"><span class="share-fb">В ФЕЙСБУКЕ</span></a>
-      <a id="share-vk" style="cursor:pointer;"><span class="share-vk">В ВКОНТАКТЕ</span></a>
-      </div>
-       <div class="row center"><div class="intro">ИКРА поздравляет тебя с Новым годом и желает не останавливаться на достигнутом. Продолжай учиться и самосовершенствоваться!</div>
-       <h2 class="big">С Новым Годом!</h2>
-       <p class="grey">не забудь поздравить маму и папу</p>
-     </div>
-    </div>
-</div>
-    <div class="surprise">
-      <div class="container center">
-        <h2>НУ И КАКОЙ ЖЕ НОВЫЙ ГОД БЕЗ</h2>
-        <div class="col-sm-4">
-          <img src="images/tree.png"><br/>
-          ЁЛКИ
-        </div>
-        <div class="col-sm-4">
-          <img src="images/snowman.png"><br/>
-          СНЕГА
-        </div>
-        <div class="col-sm-4">
-          <a href="http://www.ikraikra.ru/?utm_source=promo&utm_medium=ref&utm_campaign=promony"><img src="images/logo.png" id="logo"></a><br/>
-          И ИКРЫ
-        </div>
+      <!-- Example row of columns -->
+      <div class="row"><div class="intro">ИКРА поможет тебе подвести </div>
       <hr>
-     </div>
-      <div class="container center">     
-	<footer>
-		<p>ИНТЕГРИРОВАННЫЕ КОММУНИКАЦИИ В РЕКЛАМЕ</p><p>2009 — 2015 НОУ <span class="red">ИКРА</span></p>
-	</footer>
-	</div>
-	</div>
+        <div class="hello">
+<form id="form" class="form-horizontal" action="shared.php" method="POST">
+  <div class="form-heading"><h2>Итоги 2014 года</h2></div>
+  <div class="form-group">
+    <label for="first" class="col-sm-6 control-label">В этом году я впервые в жизни</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="first" name="first" placeholder="Попал в писуар">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="drunk" class="col-sm-6 control-label">Мне приходилось много</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="drunk" name="drunk" placeholder="Пить">
+  </div>
+</div>
+  <div class="form-group">
+    <label for="banners" class="col-sm-6 control-label">Я стал делать в 10 раз больше</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="banners" name="banners" placeholder="Баннеров">
+  </div>
+</div>
+  <div class="form-group">
+    <label for="happy" class="col-sm-6 control-label">Больше всего я радовался</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="happy" name="happy" placeholder="Оскару Макконахи">
+  </div>
+</div>
+  <div class="form-group">
+    <label for="next" class="col-sm-6 control-label">В следующем году я хочу</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="next" name="next" placeholder="Попасть на Дом-2">
+  </div>
+</div>
+  <div class="form-group radio-inline-wrapper radio-left">
+    <span>Ты</span>
+  <label class="radio-inline">
+    <input type="radio" name="gender" id="inlineRadio1" value="0"  checked>
+    <span>Мальчик</span>
+  </label>
+ <span>или</span> 
+
+  <label class="radio-inline">
+    <input type="radio" name="gender" id="inlineRadio2" value="1">
+    <span>Девочка</span>
+  </label>
+  <span>?</span>
+  </div>
+  <hr/>
+<div class="badcat" id="error">Мы знаем, что ты пытался пройти, не заполнив все поля. Мы всё о тебе знаем. <br><img src="images/cat.png"></div>
+  <div>
+    <div>
+      <button type="submit" class="btn btn-default">Готово</button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+<hr>
+<footer>
+	<p>ИНТЕГРИРОВАННЫЕ КОММУНИКАЦИИ В РЕКЛАМЕ</p><p>2009 — 2015 НОУ <span class="red">ИКРА</span></p>
+</footer>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -104,29 +133,6 @@ else
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/script.js"></script>
-<script type="text/javascript">
-$(function()
-{
-	$("#share-fb").on("click", function()
-	{
-		var w = window.open("http://www.facebook.com/sharer.php?u="+encodeURIComponent("http://newyear.ikraikra.ru/shared.php?story=<?=$hash;?>"),"Sharing","width=740,height=440");
-	});
-
-	$("#share-vk").on("click", function()
-	{
-		var mes = "2014 ЗАКАНЧИВАЕТСЯ И МНЕ ЕСТЬ ЧЕМ ГОРДИТЬСЯ! Я БЫЛ<?=($story['gender']>0?"А":"");?> РАД<?=($story['gender']>0?"А":"");?> КАК РЕБЁНОК <?= $story['happy']; ?>."+" ЭТО ПОЛНОСТЬЮ ЗАХЛЕСТНУЛО МЕНЯ ЭМОЦИЯМИ И Я ДАЖЕ ВСПЛАКНУЛ<?=($story['gender']>0?"А":"");?>, ПОКА НИКТО"+" НЕ ВИДЕЛ. Я ПЕРЕСТАЛ<?=($story['gender']>0?"А":"");?> ДУМАТЬ О ТОМ, КАК МНОГО МНЕ ПРИХОДИЛОСЬ <?= $story['drunk']; ?>"+" В ЭТОМ ГОДУ. СВОИМ ВНУКАМ Я БУДУ РАССКАЗЫВАТЬ КАК Я <?= $story['first']; ?>, ВЕДЬ ДЛЯ ЭТОГО Я ТАК МНОГО СДЕЛАЛ<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>."+" СЛЕДУЮЩИЙ ГОД БУДЕТ НЕПРЕМЕННО ЛУЧШЕ, И Я СДЕЛАЮ ВСЁ, ЧТОБЫ <?= $story['next']; ?>";
-
-		VK.Api.call('wall.post', {message: mes, attachments:"photo283395741_351264187,newyear.ikraikra.ru"}, function(r) { console.log("R= "+r); });
-
-		//var w = window.open("http://vkontakte.ru/share.php?"
-		//+"url="+encodeURIComponent("http://newyear.ikraikra.ru//result.php?story=<?= $hash;?>")+"&"
-		//+"title="+encodeURIComponent(mes)+"&"
-		//+"description="+encodeURIComponent("ЕЩЁ ОДНО НОВОГОДНЕЕ ПРОМО")+"&"
-		//+"image="+encodeURIComponent("http://newyear.ikraikra.ru//images/tree.png"),"Sharing","width=740,height=440");
-	});
-});
-VK.init({apiId: '4697175'});
-</script>
 <!-- Yandex.Metrika informer -->
 <a href="https://metrika.yandex.ru/stat/?id=27737343&amp;from=informer"
 target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/27737343/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
