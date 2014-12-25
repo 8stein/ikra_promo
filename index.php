@@ -105,12 +105,6 @@
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/script.js"></script>
-<!-- Yandex.Metrika informer -->
-<a href="https://metrika.yandex.ru/stat/?id=27737343&amp;from=informer"
-target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/27737343/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:27737343,lang:'ru'});return false}catch(e){}"/></a>
-<!-- /Yandex.Metrika informer -->
-
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 (function (d, w, c) {
