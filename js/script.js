@@ -7,7 +7,6 @@ $(function()
 		required: "Это поле является обязательным"
 	});
 
-
 	$('#form').validate(
 	{
 		rules:
@@ -27,5 +26,4 @@ $(function()
 		showErrors: function(){}
 
 	});
-
 });

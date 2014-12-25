@@ -98,8 +98,17 @@ body {
 	text-align: center;
 	margin-top:40px;
 }
+.surprise h2 {
+	margin-bottom:20px;
+}
 .surprise hr {
 	border-color:#2B9EED;
+}
+.surprise #logo{
+	margin: 81px 0 101px;
+}
+.surprise img {
+	margin-bottom: 20px;
 }
 .red {
 	color: #EF4949;
