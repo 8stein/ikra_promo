@@ -5,8 +5,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-
-    <title>ikraikra</title>
+    <title>О БОЖЕ МОЙ! ЕЩЁ ОДНО НОВОГОДНЕЕ ПРОМО!!!</title>
+	<meta property="og:image" content="http://newyear.ikraikra.ru//images/newyear-promo-ikra.png"/>
+    <meta property="og:title" content="О БОЖЕ МОЙ! ЕЩЁ ОДНО НОВОГОДНЕЕ ПРОМО!!!"/>
+    <meta property="og:description" content="ИКРА поможет тебе подвести итоги года." />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ikra.css" rel="stylesheet">
     <script src="js/ie-emulation-modes-warning.js"></script>

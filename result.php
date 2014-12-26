@@ -33,7 +33,7 @@ else
 <meta property="og:url" content="http://newyear.ikraikra.ru//shared.php?story=<?=$story['story'];?>"/>
 <meta property="og:image" content="http://newyear.ikraikra.ru//images/newyear-promo-ikra.png"/>
 <meta property="og:site_name" content="IKRA"/>
-<meta property="og:description" content="2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>. Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось  <?= $story['drunk']; ?> в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>"/>
+<meta property="og:description" content="2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>. Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось  <?= $story['drunk']; ?> в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>" />
 <link rel="icon" href="favicon.ico">
 <title>ikraikra</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -100,7 +100,6 @@ else
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/script.js"></script>
@@ -116,7 +115,7 @@ $(function()
 	{
 		var mes = "2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>."+" Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто "+" не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось <?= $story['drunk']; ?>"+" в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>."+" Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>";
 
-		VK.Api.call('wall.post', {message: mes, attachments:"photo283395741_351264187,newyear.ikraikra.ru"}, function(r) { console.log("R= "+r); });
+		VK.Api.call('wall.post', {message: mes, attachments:"photo168851_348677975,newyear.ikraikra.ru"}, function(r) { console.log("R= "+r); });
 
 		//var w = window.open("http://vkontakte.ru/share.php?"
 		//+"url="+encodeURIComponent("http://newyear.ikraikra.ru//result.php?story=<?= $hash;?>")+"&"
