@@ -8,10 +8,10 @@ if(isset($_REQUEST['story']))
 	{
 		$story = unserialize(file_get_contents($h.".txt"));
 		if(!is_array($story))
-		{ header("Location: http://dev.8stein.ru//"); }
+		{ header("Location: http://newyear.ikraikra.ru//"); }
 	}
 	else
-	{ header("Location: http://dev.8stein.ru//"); }
+	{ header("Location: http://newyear.ikraikra.ru//"); }
 }
 else
 {
@@ -27,11 +27,11 @@ else
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>. Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось  <?= $story['drunk']; ?> в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>">
 <meta name="author" content="">
-<link rel="canonical" href="http://dev.8stein.ru//shared.php?story=<?=$story['story'];?>" />
+<link rel="canonical" href="http://newyear.ikraikra.ru//shared.php?story=<?=$story['story'];?>" />
 <meta property="og:title" content="ЕЩЁ ОДНО НОВОГОДНЕЕ ПРОМО"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="http://dev.8stein.ru//shared.php?story=<?=$story['story'];?>"/>
-<meta property="og:image" content="http://dev.8stein.ru//images/newyear-promo-ikra.png"/>
+<meta property="og:url" content="http://newyear.ikraikra.ru//shared.php?story=<?=$story['story'];?>"/>
+<meta property="og:image" content="http://newyear.ikraikra.ru//images/newyear-promo-ikra.png"/>
 <meta property="og:site_name" content="IKRA"/>
 <meta property="og:description" content="2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>. Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось  <?= $story['drunk']; ?> в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>" />
 <link rel="icon" href="favicon.ico">
@@ -108,20 +108,20 @@ $(function()
 {
 	$("#share-fb").on("click", function()
 	{
-		var w = window.open("http://www.facebook.com/sharer.php?u="+encodeURIComponent("http://dev.8stein.ru/shared.php?story=<?=$hash;?>"),"Sharing","width=740,height=440");
+		var w = window.open("http://www.facebook.com/sharer.php?u="+encodeURIComponent("http://newyear.ikraikra.ru/shared.php?story=<?=$hash;?>"),"Sharing","width=740,height=440");
 	});
 
 	$("#share-vk").on("click", function()
 	{
 		var mes = "2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>."+" Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто "+" не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось <?= $story['drunk']; ?>"+" в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>."+" Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>";
 
-		VK.Api.call('wall.post', {message: mes, attachments:"photo168851_348677975,dev.8stein.ru"}, function(r) { console.log("R= "+r); });
+		VK.Api.call('wall.post', {message: mes, attachments:"photo168851_348677975,newyear.ikraikra.ru"}, function(r) { console.log("R= "+r); });
 
 		//var w = window.open("http://vkontakte.ru/share.php?"
-		//+"url="+encodeURIComponent("http://dev.8stein.ru//result.php?story=<?= $hash;?>")+"&"
+		//+"url="+encodeURIComponent("http://newyear.ikraikra.ru//result.php?story=<?= $hash;?>")+"&"
 		//+"title="+encodeURIComponent(mes)+"&"
 		//+"description="+encodeURIComponent("ЕЩЁ ОДНО НОВОГОДНЕЕ ПРОМО")+"&"
-		//+"image="+encodeURIComponent("http://dev.8stein.ru//images/tree.png"),"Sharing","width=740,height=440");
+		//+"image="+encodeURIComponent("http://newyear.ikraikra.ru//images/tree.png"),"Sharing","width=740,height=440");
 	});
 });
 VK.init({apiId: '4697175'});

@@ -8,10 +8,10 @@ if(isset($_REQUEST['story']))
 	{
 		$story = unserialize(file_get_contents($h.".txt"));
 		if(!is_array($story))
-		{ header("Location: http://dev.8stein.ru//"); }
+		{ header("Location: http://newyear.ikraikra.ru//"); }
 	}
 	else
-	{ header("Location: http://dev.8stein.ru//"); }
+	{ header("Location: http://newyear.ikraikra.ru//"); }
 }
 else
 {
@@ -27,11 +27,11 @@ else
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>. Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось  <?= $story['drunk']; ?> в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>">
 <meta name="author" content="">
-<link rel="canonical" href="http://dev.8stein.ru//shared.php?story=<?=$story['story'];?>" />
+<link rel="canonical" href="http://newyear.ikraikra.ru//shared.php?story=<?=$story['story'];?>" />
 <meta property="og:title" content="ЕЩЁ ОДНО НОВОГОДНЕЕ ПРОМО"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="http://dev.8stein.ru//shared.php?story=<?=$story['story'];?>"/>
-<meta property="og:image" content="http://dev.8stein.ru//images/newyear-promo-ikra.png"/>
+<meta property="og:url" content="http://newyear.ikraikra.ru//shared.php?story=<?=$story['story'];?>"/>
+<meta property="og:image" content="http://newyear.ikraikra.ru//images/newyear-promo-ikra.png"/>
 <meta property="og:site_name" content="IKRA"/>
 <meta property="og:description" content="2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>. Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось  <?= $story['drunk']; ?> в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>"/>
 <link rel="icon" href="favicon.ico">
