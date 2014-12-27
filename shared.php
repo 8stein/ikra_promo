@@ -43,6 +43,7 @@ else
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+	<script src="http://vkontakte.ru/js/api/openapi.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="ikraikra">
@@ -64,7 +65,7 @@ else
       <div class="row"><div class="intro">ИКРА поможет тебе подвести </div>
       <hr>
         <div class="hello">
-<form id="form" class="form-horizontal" action="shared.php" method="POST">
+<form id="form" class="form-horizontal" action="result.php" method="POST">
   <div class="form-heading"><h2>Итоги 2014 года</h2></div>
   <div class="form-group">
     <label for="first" class="col-sm-6 control-label">В этом году я впервые в жизни</label>
