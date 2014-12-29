@@ -19,7 +19,6 @@ else
 	$story = $_REQUEST;
 	file_put_contents($hash.".txt", serialize($story));
 }
-//$hash
 ?>
 <html lang="ru"><head>
 <meta charset="utf-8">
@@ -43,8 +42,6 @@ else
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-<script src="http://vkontakte.ru/js/api/xd_connection.js?2" type="text/javascript"></script>
-<script src="http://vkontakte.ru/js/api/openapi.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="ikraikra">
@@ -106,25 +103,18 @@ else
 <script type="text/javascript">
 $(function()
 {
-	$("#share-fb").on("click", function()
-	{
-		var w = window.open("http://www.facebook.com/sharer.php?u="+encodeURIComponent("http://newyear.ikraikra.ru/shared.php?story=<?=$hash;?>"),"Sharing","width=740,height=440");
-	});
+  $("#share-fb").on("click", function()
+  {
+    var w = window.open("http://www.facebook.com/sharer.php?u="+encodeURIComponent("http://newyear.ikraikra.ru/result.php?story=<?=$hash;?>"),"Sharing","width=740,height=440");
+  });
 
-	$("#share-vk").on("click", function()
-	{
-		var mes = "2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>."+" Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто "+" не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось <?= $story['drunk']; ?>"+" в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>."+" Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>";
-
-		VK.Api.call('wall.post', {message: mes, attachments:"photo168851_348677975,newyear.ikraikra.ru"}, function(r) { console.log("R= "+r); });
-
-		//var w = window.open("http://vkontakte.ru/share.php?"
-		//+"url="+encodeURIComponent("http://newyear.ikraikra.ru//result.php?story=<?= $hash;?>")+"&"
-		//+"title="+encodeURIComponent(mes)+"&"
-		//+"description="+encodeURIComponent("ЕЩЁ ОДНО НОВОГОДНЕЕ ПРОМО")+"&"
-		//+"image="+encodeURIComponent("http://newyear.ikraikra.ru//images/tree.png"),"Sharing","width=740,height=440");
-	});
+  $("#share-vk").on("click", function()
+  {
+    var w = window.open("http://vkontakte.ru/share.php?"
+    +"url="+encodeURIComponent("http://newyear.ikraikra.ru/result.php?story=<?= $hash;?>")+"&"
+    +"image="+encodeURIComponent("http://newyear.ikraikra.ru/images/newyear-promo-ikra.png"),"Sharing","width=740,height=440");
+  });
 });
-VK.init({apiId: '4697175'});
 </script>
 
 <!-- Yandex.Metrika counter -->
