@@ -25,7 +25,7 @@ else
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="2014 ЗАКАНЧИВАЕТСЯ И МНЕ ЕСТЬ ЧЕМ ГОРДИТЬСЯ! Я БЫЛ<?=($story['gender']>0?"А":"");?> РАД<?=($story['gender']>0?"А":"");?> КАК РЕБЁНОК <?= $story['happy']; ?>. ЭТО ПОЛНОСТЬЮ ЗАХЛЕСТНУЛО МЕНЯ ЭМОЦИЯМИ И Я ДАЖЕ ВСПЛАКНУЛ<?=($story['gender']>0?"А":"");?>, ПОКА НИКТО НЕ ВИДЕЛ.  Я ПЕРЕСТАЛ<?=($story['gender']>0?"А":"");?> ДУМАТЬ О ТОМ, КАК МНОГО МНЕ ПРИХОДИЛОСЬ  <?= $story['drunk']; ?> В ЭТОМ ГОДУ. СВОИМ ВНУКАМ Я БУДУ РАССКАЗЫВАТЬ КАК Я <?= $story['first']; ?>, ВЕДЬ ДЛЯ ЭТОГО Я ТАК МНОГО СДЕЛАЛ<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. СЛЕДУЮЩИЙ ГОД БУДЕТ НЕПРЕМЕННО ЛУЧШЕ, И Я СДЕЛАЮ ВСЁ, ЧТОБЫ <?= $story['next']; ?>">
+<meta name="description" content="2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>. Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось  <?= $story['drunk']; ?> в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>">
 <meta name="author" content="">
 <link rel="canonical" href="http://newyear.ikraikra.ru//shared.php?story=<?=$story['story'];?>" />
 <meta property="og:title" content="ЕЩЁ ОДНО НОВОГОДНЕЕ ПРОМО"/>
@@ -33,9 +33,9 @@ else
 <meta property="og:url" content="http://newyear.ikraikra.ru//shared.php?story=<?=$story['story'];?>"/>
 <meta property="og:image" content="http://newyear.ikraikra.ru//images/newyear-promo-ikra.png"/>
 <meta property="og:site_name" content="IKRA"/>
-<meta property="og:description" content="2014 ЗАКАНЧИВАЕТСЯ И МНЕ ЕСТЬ ЧЕМ ГОРДИТЬСЯ! Я БЫЛ<?=($story['gender']>0?"А":"");?> РАД<?=($story['gender']>0?"А":"");?> КАК РЕБЁНОК <?= $story['happy']; ?>. ЭТО ПОЛНОСТЬЮ ЗАХЛЕСТНУЛО МЕНЯ ЭМОЦИЯМИ И Я ДАЖЕ ВСПЛАКНУЛ<?=($story['gender']>0?"А":"");?>, ПОКА НИКТО НЕ ВИДЕЛ.  Я ПЕРЕСТАЛ<?=($story['gender']>0?"А":"");?> ДУМАТЬ О ТОМ, КАК МНОГО МНЕ ПРИХОДИЛОСЬ  <?= $story['drunk']; ?> В ЭТОМ ГОДУ. СВОИМ ВНУКАМ Я БУДУ РАССКАЗЫВАТЬ КАК Я <?= $story['first']; ?>, ВЕДЬ ДЛЯ ЭТОГО Я ТАК МНОГО СДЕЛАЛ<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. СЛЕДУЮЩИЙ ГОД БУДЕТ НЕПРЕМЕННО ЛУЧШЕ, И Я СДЕЛАЮ ВСЁ, ЧТОБЫ <?= $story['next']; ?>"/>
+<meta property="og:description" content="2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <?= $story['happy']; ?>. Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось  <?= $story['drunk']; ?> в этом году. Своим внукам я буду рассказывать как я <?= $story['first']; ?>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <?= $story['banners']; ?>. Следующий год будет непременно лучше, и я сделаю всё, чтобы <?= $story['next']; ?>"/>
 <link rel="icon" href="favicon.ico">
-<title>ikraikra</title>
+<title>О БОЖЕ МОЙ! ЕЩЁ ОДНО НОВОГОДНЕЕ ПРОМО!!!</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/ikra.css" rel="stylesheet">
 <script src="js/ie-emulation-modes-warning.js"></script>
@@ -55,7 +55,7 @@ else
         </div>
         <div class="col-sm-6 text">
 		<h1>Итак</h1>
-		<p>2014 ЗАКАНЧИВАЕТСЯ И МНЕ ЕСТЬ ЧЕМ ГОРДИТЬСЯ! Я БЫЛ<?=($story['gender']>0?"А":"");?> РАД<?=($story['gender']>0?"А":"");?> КАК РЕБЁНОК <span class="fat"><?= $story['happy']; ?></span>. ЭТО ПОЛНОСТЬЮ ЗАХЛЕСТНУЛО МЕНЯ ЭМОЦИЯМИ И Я ДАЖЕ ВСПЛАКНУЛ<?=($story['gender']>0?"А":"");?>, ПОКА НИКТО НЕ ВИДЕЛ.  Я ПЕРЕСТАЛ<?=($story['gender']>0?"А":"");?> ДУМАТЬ О ТОМ, КАК МНОГО МНЕ ПРИХОДИЛОСЬ  <span class="fat"><?= $story['drunk']; ?></span> В ЭТОМ ГОДУ. СВОИМ ВНУКАМ Я БУДУ РАССКАЗЫВАТЬ КАК Я <span class="fat"><?= $story['first']; ?></span>, ВЕДЬ ДЛЯ ЭТОГО Я ТАК МНОГО СДЕЛАЛ<?=($story['gender']>0?"А":"");?>  <span class="fat"><?= $story['banners']; ?></span>. СЛЕДУЮЩИЙ ГОД БУДЕТ НЕПРЕМЕННО ЛУЧШЕ, И Я СДЕЛАЮ ВСЁ, ЧТОБЫ <span class="fat"><?= $story['next']; ?></span>.</p>
+		<p>2014 заканчивается и мне есть чем гордиться! Я был<?=($story['gender']>0?"А":"");?> рад<?=($story['gender']>0?"А":"");?> как ребёнок <span class="fat"><?= $story['happy']; ?></span>. Это полностью захлестнуло меня эмоциями и я даже всплакнул<?=($story['gender']>0?"А":"");?>, пока никто не видел. Я перестал<?=($story['gender']>0?"А":"");?> думать о том, как много мне приходилось  <span class="fat"><?= $story['drunk']; ?></span> в этом году. Своим внукам я буду рассказывать как я <span class="fat"><?= $story['first']; ?></span>, ведь для этого я так много сделал<?=($story['gender']>0?"А":"");?>  <span class="fat"><?= $story['banners']; ?></span>. Следующий год будет непременно лучше, и я сделаю всё, чтобы <span class="fat"><?= $story['next']; ?></span>.</p>
 </div>
 			</div>
 		</div>
