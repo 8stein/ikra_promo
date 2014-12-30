@@ -105,13 +105,13 @@ $(function()
 {
   $("#share-fb").on("click", function()
   {
-    var w = window.open("http://www.facebook.com/sharer.php?u="+encodeURIComponent("http://newyear.ikraikra.ru/result.php?story=<?=$hash;?>"),"Sharing","width=740,height=440");
+    var w = window.open("http://www.facebook.com/sharer.php?u="+encodeURIComponent("http://newyear.ikraikra.ru/shared.php?story=<?=$hash;?>"),"Sharing","width=740,height=440");
   });
 
   $("#share-vk").on("click", function()
   {
     var w = window.open("http://vkontakte.ru/share.php?"
-    +"url="+encodeURIComponent("http://newyear.ikraikra.ru/result.php?story=<?= $hash;?>")+"&"
+    +"url="+encodeURIComponent("http://newyear.ikraikra.ru/shared.php?story=<?= $hash;?>")+"&"
     +"image="+encodeURIComponent("http://newyear.ikraikra.ru/images/newyear-promo-ikra.png"),"Sharing","width=740,height=440");
   });
 });
